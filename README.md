@@ -7,18 +7,18 @@ A modern, responsive landing page built with React, TailwindCSS, and Sanity CMS.
 ![Sanity](https://img.shields.io/badge/Sanity-CMS-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 🌟 Features
+## Features
 
-- ✨ Modern and responsive design
-- 🌍 Full RTL/LTR support for Arabic/English
-- 🌙 Dark mode support
-- 📱 Mobile-first responsive design
-- 🎨 Smooth animations with Framer Motion
-- 📝 Content management with Sanity CMS
-- ⚡ Fast performance with Vite
-- 🎯 SEO optimized
-- ♿ Accessibility features
-- 🔄 Lazy loading for images and videos
+-   Modern and responsive design
+-   Full RTL/LTR support for Arabic/English
+-   Dark mode support
+-   Mobile-first responsive design
+-   Smooth animations with Framer Motion
+-   Content management with Sanity CMS
+-   Fast performance with Vite
+-   SEO optimized
+-   Accessibility features
+-   Lazy loading for images and videos
 
 ## 📋 Sections
 
@@ -38,64 +38,31 @@ A modern, responsive landing page built with React, TailwindCSS, and Sanity CMS.
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Sanity account (for CMS)
+-   Node.js (v14 or higher)
+-   npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/academy-landing.git
 cd academy-landing
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Create a `.env` file based on `.env.example`:
-```bash
-cp .env.example .env
-```
+1. Run the development server:
 
-4. Add your Sanity project details to `.env`:
-```env
-VITE_SANITY_PROJECT_ID=your-project-id
-VITE_SANITY_DATASET=production
-VITE_SANITY_TOKEN=your-token (optional)
-```
-
-5. Run the development server:
 ```bash
 npm run dev
 ```
 
-6. Open [http://localhost:5173](http://localhost:5173) in your browser
-
-## 🔧 Sanity Setup
-
-### 1. Create a Sanity Project
-
-```bash
-npm create sanity@latest -- --project <projectname> --dataset production
-```
-
-### 2. Copy Schemas
-
-Copy the schemas from `sanity/schemas.js` to your Sanity Studio project.
-
-### 3. Deploy Sanity Studio
-
-```bash
-cd sanity-studio
-sanity deploy
-```
-
-### 4. Add Content
-
-Access your Sanity Studio at `https://yourprojectname.sanity.studio` and add content for each section.
+1. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## 🎨 Customization
 
@@ -110,32 +77,33 @@ Update fonts in `tailwind.config.js`
 ### Components
 
 All components are in `src/components/`. Each component accepts:
-- `data` - Content from Sanity CMS
-- `isRTL` - RTL/LTR state
+
+-   `data` - Content from `src/data/siteData.js`
+-   `isRTL` - RTL/LTR state
 
 ## 🌐 RTL/LTR Support
 
 The app automatically switches between RTL and LTR layouts:
 
-- Click the language toggle button in the header
-- All text, layouts, and animations adapt accordingly
-- Arabic font family is applied in RTL mode
+-   Click the language toggle button in the header
+-   All text, layouts, and animations adapt accordingly
+-   Arabic font family is applied in RTL mode
 
 ## 🌙 Dark Mode
 
 Dark mode is supported throughout the app:
 
-- Click the moon/sun icon to toggle
-- Respects system preferences by default
-- All components have dark mode variants
+-   Click the moon/sun icon to toggle
+-   Respects system preferences by default
+-   All components have dark mode variants
 
 ## 📱 Responsive Design
 
 The landing page is fully responsive:
 
-- **Mobile** (<640px): Single column layouts, mobile menu
-- **Tablet** (640px-1024px): 2-column grids, adjusted spacing
-- **Desktop** (>1024px): Full layouts with all features
+-   **Mobile** (<640px): Single column layouts, mobile menu
+-   **Tablet** (640px-1024px): 2-column grids, adjusted spacing
+-   **Desktop** (>1024px): Full layouts with all features
 
 ## 🚢 Deployment
 
@@ -151,12 +119,6 @@ npm run build
 npm run preview
 ```
 
-### Deploy to Vercel
-
-```bash
-vercel
-```
-
 ### Deploy to Netlify
 
 ```bash
@@ -169,48 +131,46 @@ netlify deploy --prod
 academy-landing/
 ├── src/
 │   ├── components/        # React components
-│   │   ├── Header.jsx
+│   │   ├── Navbar.jsx
 │   │   ├── Hero.jsx
 │   │   ├── Features.jsx
 │   │   ├── Videos.jsx
 │   │   ├── Statistics.jsx
 │   │   ├── Programs.jsx
 │   │   ├── Testimonials.jsx
+│   │   ├── ScrollToTop.jsx
 │   │   ├── FAQ.jsx
 │   │   ├── Pricing.jsx
 │   │   ├── Partners.jsx
 │   │   └── Footer.jsx
-│   ├── lib/
-│   │   └── sanityClient.js  # Sanity configuration
+│   ├── config/
+│   │   └── themSchema.js    # Theme configuration
+│   ├── contexts/
+│   │     ├─ data/
+│   │     |    ├── DataContext.jsx        # Data Context to share Data
+│   │     |    └── DataProvider.jsx       # Data Provider to provide data
+│   │     ├─ direction/
+│   │     |    ├── DirectionContext.jsx   # direction Context to share Data
+│   │     |    └── DirectionProvider.jsx  # direction Provider
+│   │     └─ theme/
+│   │          ├── ThemeContext.jsx       # Theme Context to share Data
+│   │          └── ThemeProvider.jsx      # Theme Provider
+│   ├── data/
+│   │   └── siteData.js      # site data
+│   ├── hooks/
+│   │   └── useData.js       # custom hook for site data
+│   │   └── useDirection.js  # custom hook for Rtl Direction
+│   │   └── useTheme.js      # custom hook for site theme
 │   ├── App.jsx              # Main app component
 │   ├── main.jsx             # App entry point
 │   └── index.css            # Global styles
-├── sanity/
-│   └── schemas.js           # Sanity schemas
 ├── public/                  # Static assets
-├── .env.example             # Environment variables example
 ├── tailwind.config.js       # Tailwind configuration
 ├── vite.config.js           # Vite configuration
 └── package.json
 ```
 
 ## 🐛 Troubleshooting
-
-### Sanity Connection Issues
-
-1. Check your project ID and dataset in `.env`
-2. Ensure CORS is configured in Sanity dashboard
-3. Verify API token if using private dataset
-
-### Build Errors
-
-1. Clear node_modules and reinstall:
-```bash
-rm -rf node_modules
-npm install
-```
-
-2. Clear build cache
 
 ### Styling Issues
 
@@ -224,8 +184,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Made with ❤️ by Academy Team
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Made with ❤️ by Mahmoud Osama
