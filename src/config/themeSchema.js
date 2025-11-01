@@ -343,9 +343,8 @@ export const themeSchema = {
                 icon: 'text-green-600',
             },
             primaryButton: {
-                gradient: 'from-primary-600 via-secondary-600 to-primary-600',
-                gradientHover:
-                    'from-primary-700 group-hover:via-secondary-700 group-hover:to-primary-700',
+                gradient: 'from-primary-600  to-secondary-600',
+                gradientHover: 'from-primary-700 group-hover:to-secondary-700',
                 text: 'text-white',
             },
             secondaryButton: {
