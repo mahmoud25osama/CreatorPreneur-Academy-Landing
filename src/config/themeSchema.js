@@ -343,7 +343,7 @@ export const themeSchema = {
                 icon: 'text-green-600',
             },
             primaryButton: {
-                gradient: 'from-primary-600 via-white-600 to-secondary-600',
+                gradient: 'from-primary-600 via-secondary-600 to-primary-600',
                 gradientHover:
                     'from-primary-700 group-hover:via-secondary-700 group-hover:to-primary-700',
                 text: 'text-white',
@@ -403,7 +403,7 @@ export const themeSchema = {
                 border: 'border-gray-200',
                 hover: 'hover:border-primary-300',
                 overlay:
-                    'bg-gradient-to-t from-primary via-white/50 to-transparent',
+                    'bg-gradient-to-t from-primary-50 via-white/50 to-transparent',
 
                 title: 'text-gray-900',
                 description: 'text-gray-700',
