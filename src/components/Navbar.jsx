@@ -39,7 +39,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
                     isScrolled
-                        ? 'bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl border-b border-purple-200/10 dark:border-purple-500/10 shadow-2xl shadow-purple-200/5 dark:shadow-purple-500/5'
+                        ? 'bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl border-b border-primary-200/10 dark:border-primary-500/10 shadow-2xl shadow-primary-200/5 dark:shadow-primary-500/5'
                         : 'bg-transparent border-b border-transparent shadow-none'
                 }`}
             >
@@ -53,11 +53,11 @@ const Navbar = () => {
                         >
                             <a href="/" className="flex items-center gap-3">
                                 <div className="relative">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 dark:from-purple-600 dark:to-pink-600 blur-lg opacity-70" />
-                                    <FaGraduationCap className="relative text-3xl text-purple-500 dark:text-purple-400" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 dark:from-primary-600 dark:to-secondary-600 blur-lg opacity-70" />
+                                    <FaGraduationCap className="relative text-3xl text-primary-500 dark:text-primary-400" />
                                 </div>
                                 <div>
-                                    <h2 className="text-xl font-bold bg-gradient-to-r from-purple-600 dark:from-purple-400 to-pink-600 dark:to-pink-400 bg-clip-text text-transparent">
+                                    <h2 className="text-xl font-bold bg-gradient-to-r from-primary-600 dark:from-primary-400 to-secondary-600 dark:to-secondary-400 bg-clip-text text-transparent">
                                         CreatorPreneur
                                     </h2>
                                     <p className="text-xs text-gray-700 dark:text-gray-400 -mt-1">
@@ -80,7 +80,7 @@ const Navbar = () => {
                                     whileHover={{ scale: 1.05 }}
                                 >
                                     {item.label}
-                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                                 </motion.a>
                             ))}
                         </div>
@@ -136,7 +136,7 @@ const Navbar = () => {
                                 whileTap={{ scale: 0.95 }}
                                 className="relative px-6 py-2.5 font-semibold text-white overflow-hidden rounded-full group"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 dark:from-purple-600 dark:to-pink-600 transition-all duration-300 group-hover:from-purple-500 group-hover:to-pink-500" />
+                                <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 dark:from-primary-600 dark:to-secondary-600 transition-all duration-300 group-hover:from-primary-500 group-hover:to-secondary-500" />
                                 <span className="relative">
                                     {isRTL ? 'ابدأ الآن' : 'Get Started'}
                                 </span>
@@ -188,7 +188,7 @@ const Navbar = () => {
                                 damping: 30,
                                 stiffness: 300,
                             }}
-                            className="absolute right-0 top-0 h-full w-80 bg-gray-50/95 dark:bg-gray-950/95 backdrop-blur-xl border-l border-purple-800/10 dark:border-purple-500/10 shadow-2xl"
+                            className="absolute right-0 top-0 h-full w-80 bg-gray-50/95 dark:bg-gray-950/95 backdrop-blur-xl border-l border-primary-800/10 dark:border-primary-500/10 shadow-2xl"
                         >
                             <div className="flex flex-col pt-20 h-full">
                                 <div className="overflow-y-auto py-4">
@@ -244,7 +244,7 @@ const Navbar = () => {
                                         {isRTL ? 'تسجيل دخول' : 'Sign In'}
                                     </button>
                                     <button className="relative w-full p-3 font-semibold text-white overflow-hidden rounded-lg group">
-                                        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-300 group-hover:from-purple-500 group-hover:to-pink-500" />
+                                        <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-600 transition-all duration-300 group-hover:from-primary-500 group-hover:to-secondary-500" />
                                         <span className="relative">
                                             {isRTL
                                                 ? 'ابدأ الآن'

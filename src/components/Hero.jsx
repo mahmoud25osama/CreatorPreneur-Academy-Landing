@@ -154,7 +154,7 @@ const Hero = () => {
                             <div
                                 className={`absolute inset-0 bg-gradient-to-r ${theme.primaryButton.gradient} transition-all duration-300 group-hover:${theme.primaryButton.gradientHover}`}
                             />
-                            <span className="relative">
+                            <span className="relative ">
                                 {hero.ctaButton.text}
                             </span>
                             <FaArrowRight className="relative w-5 h-5 group-hover:translate-x-1 transition-transform" />

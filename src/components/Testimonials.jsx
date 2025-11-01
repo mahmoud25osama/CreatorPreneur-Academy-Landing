@@ -29,7 +29,7 @@ const Testimonials = () => {
         <section
             id="testimonials"
             ref={ref}
-            className="section-padding ${theme.background} transition-colors duration-500"
+            className={`section-padding ${theme.background} transition-colors duration-500`}
         >
             <div className="container-custom">
                 {/* Section Header */}
@@ -123,7 +123,7 @@ const Testimonials = () => {
                     {/* Navigation Buttons */}
                     <button
                         onClick={prevTestimonial}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-10 bg-white dark:bg-dark-400 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-10 bg-white dark:bg-primary-600 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
                         aria-label="Previous testimonial"
                     >
                         <svg
@@ -142,7 +142,7 @@ const Testimonials = () => {
                     </button>
                     <button
                         onClick={nextTestimonial}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-10 bg-white dark:bg-dark-400 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-10 bg-white dark:bg-primary-600 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
                         aria-label="Next testimonial"
                     >
                         <svg

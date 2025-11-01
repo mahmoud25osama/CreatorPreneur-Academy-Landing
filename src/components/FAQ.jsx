@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useData } from '../hooks/useData'
+import { useTheme } from '../hooks/useTheme'
+import { getSectionTheme } from '../config/themeSchema'
 
 const FAQ = () => {
     const { faq } = useData()
+    const { isDark } = useTheme()
+    const theme = getSectionTheme(isDark, 'faq')
     const { ref, inView } = useInView({
         threshold: 0.1,
         triggerOnce: true,
@@ -20,7 +24,7 @@ const FAQ = () => {
         <section
             id="faq"
             ref={ref}
-            className="section-padding bg-gray-50 dark:bg-dark-400"
+            className={`${theme.background} section-padding `}
         >
             <div className="container-custom">
                 {/* Section Header */}
@@ -31,7 +35,7 @@ const FAQ = () => {
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-display">
-                        <span className="text-gradient">{faq.title}</span>
+                        <span className={theme.sectionTitle}>{faq.title}</span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-300">
                         {faq.subtitle}

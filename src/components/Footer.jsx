@@ -72,7 +72,7 @@ const Footer = () => {
     return (
         <footer
             id="contact"
-            className="bg-gray-900 dark:bg-gray-950 text-white transition-colors duration-200"
+            className="bg-primary-900 dark:bg-primary-950 text-white transition-colors duration-200"
         >
             {/* Newsletter Section */}
             <div className="border-b border-gray-700">
@@ -120,11 +120,11 @@ const Footer = () => {
                         <div className="mb-6">
                             <div className="flex items-center space-x-3 rtl:space-x-reverse">
                                 <div className="relative">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 blur-lg opacity-60" />
-                                    <FaGraduationCap className="relative text-3xl text-purple-400" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-600 blur-lg opacity-60" />
+                                    <FaGraduationCap className="relative text-3xl text-primary-400" />
                                 </div>
                                 <div>
-                                    <h2 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                    <h2 className="text-xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
                                         CreatorPreneur
                                     </h2>
                                     <p className="text-xs text-gray-400 -mt-1">

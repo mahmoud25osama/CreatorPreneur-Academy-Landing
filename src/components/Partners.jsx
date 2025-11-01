@@ -4,7 +4,14 @@ import { useInView } from 'react-intersection-observer'
 import { useTheme } from '../hooks/useTheme'
 import { getSectionTheme } from '../config/themeSchema'
 import { useDirection } from '../hooks/useDirection'
-
+import img01 from '/src/assets/img/windows.svg'
+import img02 from '/src/assets/img/google.svg'
+import img03 from '/src/assets/img/amazon.svg'
+import img04 from '/src/assets/img/paypal.svg'
+import img05 from '/src/assets/img/apple.svg'
+import img06 from '/src/assets/img/behance.svg'
+import img07 from '/src/assets/img/github.svg'
+import img08 from '/src/assets/img/adobe.svg'
 const Partners = () => {
     const { isRTL } = useDirection()
     const { isDark } = useTheme()
@@ -19,56 +26,56 @@ const Partners = () => {
         {
             _id: '1',
             name: 'Microsoft',
-            logo: '/src/assets/img/windows.svg',
+            logo: { img01 },
             website: 'https://www.microsoft.com',
             order: 1,
         },
         {
             _id: '2',
             name: 'Google',
-            logo: '/src/assets/img/google.svg',
+            logo: { img02 },
             website: 'https://www.google.com',
             order: 2,
         },
         {
             _id: '3',
             name: 'Amazon',
-            logo: '/src/assets/img/amazon.svg',
+            logo: { img03 },
             website: 'https://www.amazon.com',
             order: 3,
         },
         {
             _id: '4',
             name: 'Paypal',
-            logo: '/src/assets/img/paypal.svg',
+            logo: { img04 },
             website: 'https://www.poppppp.com',
             order: 4,
         },
         {
             _id: '5',
             name: 'Apple',
-            logo: '/src/assets/img/apple.svg',
+            logo: { img05 },
             website: 'https://www.apple.com',
             order: 5,
         },
         {
             _id: '6',
             name: 'Behance',
-            logo: '/src/assets/img/behance.svg',
+            logo: { img06 },
             website: 'https://www.behance.com',
             order: 6,
         },
         {
             _id: '7',
             name: 'Github',
-            logo: '/src/assets/img/github.svg',
+            logo: { img07 },
             website: 'https://www.github.com',
             order: 7,
         },
         {
             _id: '8',
             name: 'Adobe',
-            logo: '/src/assets/img/adobe.svg',
+            logo: { img08 },
             website: 'https://www.adobe.com',
             order: 8,
         },
