@@ -98,13 +98,13 @@ const Navbar = () => {
                                     {isRTL ? (
                                         <img
                                             src={us}
-                                            alt="en"
+                                            alt="en flag"
                                             className="w-6 h-6"
                                         />
                                     ) : (
                                         <img
                                             src={sa}
-                                            alt="ar"
+                                            alt="ar flag"
                                             className="w-6 h-6"
                                         />
                                     )}
