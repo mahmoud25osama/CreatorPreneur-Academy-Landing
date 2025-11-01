@@ -5,7 +5,8 @@ import { FaGraduationCap, FaLanguage, FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from '../hooks/useTheme'
 import { getSectionTheme } from '../config/themeSchema'
 import { useDirection } from '../hooks/useDirection'
-
+import us from '/src/assets/img/us.svg'
+import sa from '/src/assets/img/sa.svg'
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -96,13 +97,13 @@ const Navbar = () => {
                                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
                                     {isRTL ? (
                                         <img
-                                            src="/src/assets/img/us.svg"
+                                            src={us}
                                             alt="en"
                                             className="w-6 h-6"
                                         />
                                     ) : (
                                         <img
-                                            src="/src/assets/img/sa.svg"
+                                            src={sa}
                                             alt="ar"
                                             className="w-6 h-6"
                                         />
