@@ -1,6 +1,6 @@
 # Academy Landing Page 🎓
 
-A modern, responsive landing page built with React, TailwindCSS, and Sanity CMS. Features full RTL/LTR support, dark mode, and dynamic content management.
+A modern, responsive landing page built with React, TailwindCSS Features full RTL/LTR support, dark mode, and dynamic content management.
 
 ![React](https://img.shields.io/badge/React-18.2-blue)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-green)
