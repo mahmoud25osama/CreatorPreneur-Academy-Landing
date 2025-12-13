@@ -4,7 +4,6 @@ A modern, responsive landing page built with React, TailwindCSS, and Sanity CMS.
 
 ![React](https://img.shields.io/badge/React-18.2-blue)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-green)
-![Sanity](https://img.shields.io/badge/Sanity-CMS-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## Features
