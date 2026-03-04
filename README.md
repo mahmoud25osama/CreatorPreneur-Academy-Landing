@@ -42,8 +42,6 @@ We welcome contributions from the community! Here’s how you can help:
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
-## Contact
-For any inquiries, please reach out to [support@creatorpreneur.com](mailto:support@creatorpreneur.com).  
 
 ---
 
