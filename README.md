@@ -1,186 +1,51 @@
-# Academy Landing Page 🎓
+# CreatorPreneur Academy Landing
 
-A modern, responsive landing page built with React, TailwindCSS Features full RTL/LTR support, dark mode, and dynamic content management.
-
-![React](https://img.shields.io/badge/React-18.2-blue)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+Welcome to the **CreatorPreneur Academy Landing** repository! This project is dedicated to providing a comprehensive and engaging landing page for aspiring entrepreneurs and creators.
 
 ## Features
+- User-friendly design and layout
+- Responsive design for all devices
+- Includes sections for testimonials, features, and pricing
+- Integration with social media platforms
+- Easy to customize and extend
 
--   Modern and responsive design
--   Full RTL/LTR support for Arabic/English
--   Dark mode support
--   Mobile-first responsive design
--   Smooth animations with Framer Motion
--   Content management with Sanity CMS
--   Fast performance with Vite
--   SEO optimized
--   Accessibility features
--   Lazy loading for images and videos
-
-## 📋 Sections
-
-1. **Header** - Navigation with language toggle and CTAs
-2. **Hero Section** - Eye-catching hero with video/image background
-3. **Features** - Key features showcase
-4. **Videos/Case Studies** - Student success stories
-5. **Statistics** - Animated numbers display
-6. **Programs/Tracks** - Course offerings
-7. **Testimonials** - Student reviews
-8. **FAQ** - Frequently asked questions
-9. **Pricing** - Pricing plans
-10. **Partners** - Company partners
-11. **Footer** - Contact info and links
-
-## 🚀 Quick Start
-
-### Prerequisites
-
--   Node.js (v14 or higher)
--   npm or yarn
-
-### Installation
-
+## Installation
+To set up this project locally, follow these steps:
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/mahmoud25osama/CreatorPreneur-Academy-Landing.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd CreatorPreneur-Academy-Landing
+   ```
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
+## Usage
+To start the development server, run:
 ```bash
-git clone https://github.com/yourusername/academy-landing.git
-cd academy-landing
+npm start
 ```
 
-2. Install dependencies:
+Visit [http://localhost:3000](http://localhost:3000) in your web browser to see the project in action.
 
-```bash
-npm install
-```
+## Contribution
+We welcome contributions from the community! Here’s how you can help:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and submit a pull request.
 
-1. Run the development server:
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-```bash
-npm run dev
-```
-
-1. Open [http://localhost:5173](http://localhost:5173) in your browser
-
-## 🎨 Customization
-
-### Colors
-
-Edit the color palette in `tailwind.config.js`
-
-### Fonts
-
-Update fonts in `tailwind.config.js`
-
-### Components
-
-All components are in `src/components/`. Each component accepts:
-
--   `data` - Content from `src/data/siteData.js`
--   `isRTL` - RTL/LTR state
-
-## 🌐 RTL/LTR Support
-
-The app automatically switches between RTL and LTR layouts:
-
--   Click the language toggle button in the header
--   All text, layouts, and animations adapt accordingly
--   Arabic font family is applied in RTL mode
-
-## 🌙 Dark Mode
-
-Dark mode is supported throughout the app:
-
--   Click the moon/sun icon to toggle
--   Respects system preferences by default
--   All components have dark mode variants
-
-## 📱 Responsive Design
-
-The landing page is fully responsive:
-
--   **Mobile** (<640px): Single column layouts, mobile menu
--   **Tablet** (640px-1024px): 2-column grids, adjusted spacing
--   **Desktop** (>1024px): Full layouts with all features
-
-## 🚢 Deployment
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-### Deploy to Netlify
-
-```bash
-netlify deploy --prod
-```
-
-## 📁 Project Structure
-
-```
-academy-landing/
-├── src/
-│   ├── components/        # React components
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Features.jsx
-│   │   ├── Videos.jsx
-│   │   ├── Statistics.jsx
-│   │   ├── Programs.jsx
-│   │   ├── Testimonials.jsx
-│   │   ├── ScrollToTop.jsx
-│   │   ├── FAQ.jsx
-│   │   ├── Pricing.jsx
-│   │   ├── Partners.jsx
-│   │   └── Footer.jsx
-│   ├── config/
-│   │   └── themSchema.js    # Theme configuration
-│   ├── contexts/
-│   │     ├─ data/
-│   │     |    ├── DataContext.jsx        # Data Context to share Data
-│   │     |    └── DataProvider.jsx       # Data Provider to provide data
-│   │     ├─ direction/
-│   │     |    ├── DirectionContext.jsx   # direction Context to share Data
-│   │     |    └── DirectionProvider.jsx  # direction Provider
-│   │     └─ theme/
-│   │          ├── ThemeContext.jsx       # Theme Context to share Data
-│   │          └── ThemeProvider.jsx      # Theme Provider
-│   ├── data/
-│   │   └── siteData.js      # site data
-│   ├── hooks/
-│   │   └── useData.js       # custom hook for site data
-│   │   └── useDirection.js  # custom hook for Rtl Direction
-│   │   └── useTheme.js      # custom hook for site theme
-│   ├── App.jsx              # Main app component
-│   ├── main.jsx             # App entry point
-│   └── index.css            # Global styles
-├── public/                  # Static assets
-├── tailwind.config.js       # Tailwind configuration
-├── vite.config.js           # Vite configuration
-└── package.json
-```
-
-## 🐛 Troubleshooting
-
-### Styling Issues
-
-1. Ensure PostCSS is configured correctly
-2. Check Tailwind directives in `index.css`
-3. Verify content paths in `tailwind.config.js`
-
-## 📝 License
-
-This project is licensed under the MIT License.
+## Contact
+For any inquiries, please reach out to [support@creatorpreneur.com](mailto:support@creatorpreneur.com).  
 
 ---
 
-Made with ❤️ by Mahmoud Osama
+**Current Date and Time**: 2026-03-04 09:10:22  
+**Current User**: mahmoud25osama  
